@@ -81,7 +81,7 @@ class Student:
 
 ```python
 S1 = Student("Ali", 20)
-S1.display_info()  # Output: Ali is 20 years oldlla
+S1.display_info()  # Output: Ali is 20 years old
 ```
 
 Extra Example :
