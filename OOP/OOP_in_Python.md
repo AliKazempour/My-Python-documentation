@@ -1,6 +1,6 @@
 # Object-Oriented Programming (OOP) in Python
-                                            In the name of allah
                                             
+                                            In the name of allah
 Object-Oriented Programming (OOP) is a programming paradigm that uses "objects" to design applications and computer programs. Objects can be thought of as instances of classes, which can contain data (attributes) and functions (methods) that operate on the data. Python is an object-oriented language and provides extensive support for OOP.
 
 ## Table of Contents
