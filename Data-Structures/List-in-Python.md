@@ -1,4 +1,3 @@
-```markdown
 # Python Lists Documentation
 
 ## Table of Contents
@@ -316,4 +315,3 @@ print(sorted_list)  # Output: [1, 2, 3]
 Lists are an essential and versatile data structure in Python, providing a range of functionalities and methods for
 
  data storage, manipulation, and iteration. Understanding and utilizing lists effectively is crucial for efficient Python programming.
-```
