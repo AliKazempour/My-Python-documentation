@@ -89,7 +89,7 @@ Extra Example :
 ```python
 class Circle:
     def __init__(self, radius):
-        if r<=0:
+        if radius<=0:
             raise ValueError("Radius must be greater than 0")
         self.radius = radius
 
