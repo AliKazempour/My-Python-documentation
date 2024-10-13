@@ -1,6 +1,4 @@
-In this work, we develop a machine learning algorithm capable
-of predicting base editing outcomes of commonly used ABEs and
-CBEs on any given protospacer sequence in silico available via# NumPy Documentation
+# NumPy Documentation
 
 ## Table of Contents
 
@@ -269,7 +267,7 @@ print(np.max(a)) # Output: 5
 print(np.min(a)) # Output: 1
 
 # Standard Deviation
-print(np.std(a)) # Output: 1.4142135623730951
+print(np.std(a)) 
 ```
 
 ## Useful Tips
