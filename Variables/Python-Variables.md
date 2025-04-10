@@ -2,15 +2,15 @@
 
 ## Table of Contents
 
-1. Introduction to Variables
-2. Variable Naming Conventions
-3. Assigning Values to Variables
-4. Variable Types
-5. Working with Variables
-6. Variable Scope
-7. Constants in Python
-8. Best Practices
-9. Conclusion
+1. [Introduction to Variables](#1-introduction-to-variables)
+2. [Variable Naming Conventions](#2-variable-naming-conventions)
+3. [Assigning Values to Variables](#3-assigning-values-to-variables)
+4. [Variable Types](#4-variable-types)
+5. [Working with Variables](#5-working-with-variables)
+6. [Variable Scope](#6-variable-scope)
+7. [Constants in Python](#7-constants-in-python)
+8. [Best Practices](#8-best-practices)
+9. [Conclusion](#9-conclusion)
 
 ## 1. Introduction to Variables
 
