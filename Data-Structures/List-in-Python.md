@@ -2,19 +2,19 @@
 
 ## Table of Contents
 
-1. Introduction to Lists
-2. Creating Lists
-3. Accessing List Elements
-4. Modifying Lists
-5. List Methods
-6. List Comprehensions
-7. Iterating Through Lists
-8. Slicing Lists
-9. List Operations
-10. Nested Lists
-11. List Copying
-12. List Functions
-13. Conclusion
+1. [Introduction to Lists](#1-introduction-to-lists)
+2. [Creating Lists](#2-creating-lists)
+3. [Accessing List Elements](#3-accessing-list-elements)
+4. [Modifying Lists](#4-modifying-lists)
+5. [List Methods](#5-list-methods)
+6. [List Comprehensions](#6-list-comprehensions)
+7. [Iterating Through Lists](#7-iterating-through-lists)
+8. [Slicing Lists](#8-slicing-lists)
+9. [List Operations](#9-list-operations)
+10. [Nested Lists](#10-nested-lists)
+11. [List Copying](#11-list-copying)
+12. [List Functions](#12-list-functions)
+13. [Conclusion](#13-conclusion)
 
 ## 1. Introduction to Lists
 
@@ -162,19 +162,54 @@ Python provides a variety of useful methods for lists.
 
 ## 6. List Comprehensions
 
-List comprehensions provide a concise way to create lists.
+List comprehensions provide a concise way to create lists by combining expressions and loops in a single line of code. They allow you to generate new lists by applying an expression to each element in an iterable.
+
+### Basic Example
 
 ```python
 squares = [x**2 for x in range(10)]
 print(squares)  # Output: [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
 ```
 
-List comprehensions can also include conditions.
+In this example, the expression `x**2` is applied to each element `x` in the range from 0 to 9, creating a list of squares.
+
+### With Conditions
+
+List comprehensions can also include conditions to filter elements.
 
 ```python
 even_squares = [x**2 for x in range(10) if x % 2 == 0]
 print(even_squares)  # Output: [0, 4, 16, 36, 64]
 ```
+
+Here, the condition `x % 2 == 0` filters the elements so that only even numbers are squared.
+
+### Nested Loops
+
+You can use nested loops within a list comprehension to generate combinations.
+
+```python
+combinations = [(x, y) for x in range(3) for y in range(3)]
+print(combinations)  # Output: [(0, 0), (0, 1), (0, 2), (1, 0), (1, 1), (1, 2), (2, 0), (2, 1), (2, 2)]
+```
+
+This creates a list of tuples representing all combinations of `x` and `y` from 0 to 2.
+
+### Using Functions
+
+You can call functions within list comprehensions.
+
+```python
+def square(x):
+    return x * x
+
+squared_numbers = [square(x) for x in range(10)]
+print(squared_numbers)  # Output: [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+```
+
+Here, the `square` function is applied to each element in the range.
+
+List comprehensions are a powerful tool in Python for creating and transforming lists in a clear and concise manner.
 
 ## 7. Iterating Through Lists
 
