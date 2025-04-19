@@ -2,18 +2,18 @@
 
 ## Table of Contents
 
-1. Introduction
-2. Types of Loops in Python
-   - while Loop
-   - for Loop
-3. Loop Control Statements
-   - break Statement
-   - continue Statement
-   - pass Statement
-4. Nested Loops
-5. Looping Techniques
-6. List Comprehensions
-7. Conclusion
+1. [Introduction](#1-introduction)
+2. [Types of Loops in Python](#2-types-of-loops-in-python)
+   - [while Loop](#while-loop)
+   - [for Loop](#for-loop)
+3. [Loop Control Statements](#3-loop-control-statements)
+   - [break Statement](#break-statement)
+   - [continue Statement](#continue-statement)
+   - [pass Statement](#pass-statement)
+4. [Nested Loops](#4-nested-loops)
+5. [Looping Techniques](#5-looping-techniques)
+6. [List Comprehensions](#6-list-comprehensions)
+7. [Conclusion](#7-conclusion)
 
 ## 1. Introduction
 
