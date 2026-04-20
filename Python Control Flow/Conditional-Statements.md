@@ -194,8 +194,92 @@ else:
     print("You are not eligible to vote.")
 ```
 
+## `match-case` (Structural Pattern Matching)
+Starting from Python 3.10, Python introduced a powerful construct called `match-case`, which serves a similar purpose to `switch-case` in other languages—but with significantly more capabilities.
+
+### 1. Basic Usage (Switch Replacement)
+```python
+command = "start"
+
+match command:
+    case "start":
+        print("System is starting...")
+    case "stop":
+        print("System is stopping...")
+    case "restart":
+        print("System is restarting...")
+    case _:
+        print("Unknown command")
+
+```
+This is the most switch-like usage.
+The underscore `_` acts as a default case.
+
+### 2. Matching Multiple Values (Cleaner Than Many `elif`)
+
+```python
+day = 6
+
+match day:
+    case 1 | 2 | 3 | 4 | 5:
+        print("Weekday")
+    case 6 | 7:
+        print("Weekend")
+
+```
+The `|` operator means `or`.
+
+### 3. Matching Data Structures (Real Power)
+This is where `match-case` becomes more powerful than traditional `switch` statements.
+```python
+event = ("click", 200, 350)
+
+match event:
+    case ("click", x, y):
+        print(f"Mouse clicked at ({x}, {y})")
+    case ("drag", x, y):
+        print(f"Dragging from ({x}, {y})")
+    case ("scroll", amount):
+        print(f"Scrolled by {amount}")
+    case _:
+        print("Unknown event")
+
+```
+This is called destructuring patterns.This is far beyond classic `switch-case`.
+
+### 4. Pattern Matching with Guards (Additional Conditions)
+Guards allow conditional logic inside a pattern.
+```python
+age = 17
+
+match age:
+    case n if n < 0:
+        print("Invalid age")
+    case n if n < 18:
+        print("Minor")
+    case n if n >= 18:
+        print("Adult")
+
+```
+### 5. Combining Structure + Guards
+```python
+reading = ("Tehran", 32)
+
+match reading:
+    case (city, temp) if temp >= 40:
+        print(f"{city}: Extremely hot!")
+    case (city, temp) if temp >= 30:
+        print(f"{city}: Hot weather.")
+    case (city, temp) if temp >= 20:
+        print(f"{city}: Mild temperature.")
+    case (city, temp):
+        print(f"{city}: Cold weather.")
+
+```
 ## Conclusion
 
-Conditional statements are crucial in controlling the flow of your Python programs. They allow you to execute different code blocks based on specific conditions, making your programs more dynamic and functional. By mastering `if`, `elif`, and `else` statements, along with logical operators and nested conditions, you can handle complex decision-making processes in your code.
-
+Conditional statements are essential for controlling the flow of a Python program. They allow your code to make decisions and execute different actions depending on specific conditions.
+Using `if`, `elif`, and `else`, you can create clear decision paths in your programs. Logical operators like `and`, `or`, and `not` help combine conditions, while nested conditionals allow more complex logic when needed.
+In addition, Python’s `match-case` structure  provides a powerful way to match values and data structures, making certain types of decision logic cleaner and easier to read.
+Together, these tools enable you to build programs that react intelligently to data, user input, and different runtime situations.
 
